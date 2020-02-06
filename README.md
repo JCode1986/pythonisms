@@ -13,10 +13,6 @@ class LinkedList:
     def __init__(self):
         self.head = None
 
-
-    def __len__(self):
-      return len(list(iter(self)))
-
     def __iter__(self):
 
       def generator_func():
@@ -34,12 +30,16 @@ class LinkedList:
 * `yield` is a keyword that is used like return, except the function will return a generator.
     * when you call the function, the code you have written in the function body does not run. The function only returns the generator object
     * code will continue from where it left off each time for uses the generator
-    * The first time the `for` calls the generator object created from the function, it will run the code in your function from the beginning until it hits yield, then it'll return the first value of the loop. Then, each other call will run the loop in the function one more time, and return the next value until there is no value to return.
-
+    * The first time the `for` calls the generator object created from the function, it will run the code in the function from the beginning until it hits yield, then it'll return the first value of the loop. Then, each other call will run the loop in the function one more time, and return the next value until there is no value to return.
+    
+### Python Iterators
+* Iterators provide a sequence interface to Python objects that’s memory efficient and considered Pythonic. Behold the beauty of the for-in loop!
+* To support iteration an object needs to implement the iterator protocol by providing the __iter__ and __next__ dunder methods.
+* Class-based iterators are only one way to write iterable objects in Python. Also consider generators and generator expressions.
 
 ### References:
 * [Iterators](https://dbader.org/blog/python-iterators)
 * [Generators](https://dbader.org/blog/python-generators)
 * [Dunder Methods](https://dbader.org/blog/python-dunder-methods)
 * [Decorators](https://realpython.com/primer-on-python-decorators/)
-* [yield] (https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do)
+* [yield](https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do)
