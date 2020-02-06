@@ -32,11 +32,6 @@ class LinkedList:
     * code will continue from where it left off each time for uses the generator
     * The first time the `for` calls the generator object created from the function, it will run the code in the function from the beginning until it hits yield, then it'll return the first value of the loop. Then, each other call will run the loop in the function one more time, and return the next value until there is no value to return.
     
-### Python Iterators
-* Iterators provide a sequence interface to Python objects that’s memory efficient and considered Pythonic. Behold the beauty of the for-in loop!
-* To support iteration an object needs to implement the iterator protocol by providing the __iter__ and __next__ dunder methods.
-* Class-based iterators are only one way to write iterable objects in Python. Also consider generators and generator expressions.
-
 ### References:
 * [Iterators](https://dbader.org/blog/python-iterators)
 * [Generators](https://dbader.org/blog/python-generators)
