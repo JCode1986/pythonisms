@@ -42,3 +42,4 @@ class LinkedList:
 * [Generators](https://dbader.org/blog/python-generators)
 * [Dunder Methods](https://dbader.org/blog/python-dunder-methods)
 * [Decorators](https://realpython.com/primer-on-python-decorators/)
+* [yield] (https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do)
