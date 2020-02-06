@@ -5,7 +5,8 @@
 ### What I have learned with Python Iterators, Generators, Dunder Methods, and Decorators
 
 ### Iterators
-* `__iter__` and `__next__` are very useful if you would like to iterate through an object
+* `__iter__` and `__next__` are very useful if you would like to iterate through an object. Objects that support the `__iter__` and `__next__` dunder methods automatically work with for-in loops.
+
 * Here is an example of using an iterator with a linked list:
 ```
 class LinkedList:
