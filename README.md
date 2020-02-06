@@ -4,7 +4,6 @@
 
 ### What I have learned with Python Iterators, Generators, Dunder Methods, and Decorators
 
-### Iterators
 * `__iter__` and `__next__` are very useful if you would like to iterate through an object. Objects that support the `__iter__` and `__next__` dunder methods automatically work with for-in loops.
 
 * Here is an example of using an iterator with a linked list:
@@ -30,6 +29,13 @@ class LinkedList:
 
       return generator_func()
 ``` 
+* Generators are iterators, a kind of iterable you can only iterate over once. Generators do not store all the values in memory, they generate the values on the fly
+
+* `yield` is a keyword that is used like return, except the function will return a generator.
+    * when you call the function, the code you have written in the function body does not run. The function only returns the generator object
+    * code will continue from where it left off each time for uses the generator
+    * The first time the `for` calls the generator object created from the function, it will run the code in your function from the beginning until it hits yield, then it'll return the first value of the loop. Then, each other call will run the loop in the function one more time, and return the next value until there is no value to return.
+
 
 ### References:
 * [Iterators](https://dbader.org/blog/python-iterators)
